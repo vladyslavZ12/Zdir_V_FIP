@@ -1,0 +1,180 @@
+*
+  margin: 0
+  padding: 0
+nav
+  margin-bottom: 3%
+body
+  background-image: url('../images/back.png')
+  background-repeat: no-repeat
+  letter-spacing: 0.12em
+  background-size: cover
+h1,h2,p,button,img,video,a
+  margin-top: 1.5vh
+  margin-bottom: 1.5vh
+video
+  border-radius: 5%
+  box-shadow: 0px 18px 25px black
+.nav-img
+  width: 10%
+  margin-left: 3%
+  height: auto
+
+.vodka-modal-img
+  width: 100%
+  height: auto
+.nav-li
+  display: inline
+  margin-right: 8vw
+  font-size: 4vh
+h1,h2,h3,h4,h5
+  text-align: center
+h1
+  font-size: 5vh
+
+.wrapper
+  width: 90%
+  margin: 0 auto
+  align-content: center
+  display: center
+
+p
+  padding-left: 1vh
+  font-size: 2vh
+  text-align: center
+
+body
+  font-family: 'Playfair Display', serif
+
+a
+  text-decoration: none
+  color: black
+footer
+  width: 100%
+  padding-bottom: 3%
+  padding-top: 3%
+
+.footer-link
+  margin-right: 1vh
+  display: inline
+  color: white
+
+.container
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.block
+  order: 2
+.footer-links
+  a
+    color: blue
+    font-size: 2vh
+.img-project
+  width: 90%
+  transform: scale(1)
+  border-radius: 5%
+  box-shadow: 0px 18px 25px black
+
+.projects-h2
+  width: 100%
+  font-size: 3vh
+.img-project:hover
+  animation-name: img-big
+  animation-duration: 1s
+
+.footer
+  background: white
+  text-align: center
+  font-size: 1vh
+
+@keyframes img-big
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(1.05)
+@media only screen and (max-width: 1000px)
+  p.container
+    font-size: 1.5vh
+  .wrapper
+    width: 90%
+    margin: 0 auto
+  .nav-li
+    display: inline
+    margin-right: 2vh
+    font-size: 2vh
+  p
+    padding-left: 1vh
+    font-size: 1vh
+    text-align: center
+  .projects-h2
+    width: 100%
+    font-size: 2vh
+  .project-description
+    font-size: 1.2vh
+  .nav-ul
+    margin-top: 1vh
+    margin-left: 1vh
+  .nav-img
+    width: 15%
+  .img-project
+    width: 100%
+    transform: scale(1)
+    border-radius: 5%
+    box-shadow: 0px 18px 25px black
+  .modal
+    padding-top: 100px
+
+  // modal
+.modal
+  display: none
+
+  /* Hidden by default
+  position: fixed
+
+  /* Stay in place
+  z-index: 1
+
+  /* Sit on top
+  padding-top: 10px
+
+  /* Location of the box
+  left: 0
+  top: 0
+  width: 100%
+
+  /* Full width
+  height: 100%
+
+  /* Full height
+  overflow: auto
+
+  /* Enable scroll if needed
+  background-color: rgb(0, 0, 0)
+
+  /* Fallback color
+  background-color: rgba(0, 0, 0, 0.4)
+
+  /* Black w/ opacity
+
+/* Modal Content
+
+.modal-content,
+  background-color: #ffffff
+  margin: auto
+  padding: 20px
+  border: 1px solid #888
+  border-radius: 3%
+  width: 80%
+
+/* The Close Button
+
+.close
+  color: #aaaaaa
+  float: right
+  font-size: 28px
+  font-weight: bold
+
+  &:hover, &:focus
+    color: #000
+    text-decoration: none
+    cursor: pointer

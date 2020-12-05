@@ -1,0 +1,24 @@
+form, textarea, input {
+  width: 98%;
+  padding: 1%;
+  margin-bottom: 0.5vh; }
+
+label {
+  margin-left: 0.5vh; }
+
+form {
+  margin-top: 15vh; }
+
+label, input, textarea {
+  font-size: 1.8vh; }
+
+@media only screen and (max-width: 1000px) {
+  form {
+    margin-top: 15vh;
+    margin-bottom: 36vh; } }
+
+.submit-btn {
+  width: 30%;
+  border-radius: 5%; }
+
+/*# sourceMappingURL=contact.css.map */
