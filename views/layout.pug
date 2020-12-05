@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    link(rel='shortcut icon' href='./images/small.png')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/contact.css')
+    link(rel='stylesheet', href='/stylesheets/about.css')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap' rel='stylesheet')
+  body
+    nav.my-nav
+      .wrapper
+        ul.nav-ul
+          li.nav-li
+            img.nav-img(src="./images/Logowhite.png", alt="logo")
+          li.nav-li 
+            a(href="welcome") Welcome
+          li.nav-li 
+            a(href="about") About
+          li.nav-li 
+            a(href="contact") Contact
+    block navigation
+  footer.footer
+    .wrapper
+       p &copy Vladislav Zdir
+       ul.footer-links
+         li.footer-link 
+           a(href="" target="_blank") Instagram
+         li.footer-link 
+           a(href="" target="_blank") Facebook
+         li.footer-link 
+           a(href="" target="_blank") Github
