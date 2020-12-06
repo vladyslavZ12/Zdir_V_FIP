@@ -1,8 +1,5 @@
 const addClients = (db,nodemailer,transporter) =>(req,res) =>{
     const {name, phone, comments} = req.body;
-    
-
-
       db('clients')
       .insert({
         name: name,

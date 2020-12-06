@@ -5,10 +5,9 @@
  */
 
 var app = require('../app');
-var cors = require('cors')
 var debug = require('debug')('myapp:server');
 var http = require('http');
-app.use(cors())
+
 /**
  * Get port from environment and store in Express.
  */

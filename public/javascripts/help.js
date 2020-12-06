@@ -14,10 +14,10 @@ addItem = () => {
             })
           })
           .then(data=>{
-            document.getElementById("statusAdd").innerHTML = "Sent!";
+            document.getElementById("statusAdd").innerHTML = "Item added!";
           })
           .catch(err=>{ 
-            document.getElementById("statusAdd").innerHTML = "";
+            document.getElementById("statusAdd").innerHTML = "Oops, try again later :(";
           });
     }
   }

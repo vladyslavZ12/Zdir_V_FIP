@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 
-
-
 const knex = require('knex');
 const client = require('./client');
 const nodemailer = require("nodemailer");
@@ -16,14 +14,14 @@ const transporter = nodemailer.createTransport({
      }
  });
 
-// mysql://b8c01ca0de33d3:c70c50bb@us-cdbr-east-02.cleardb.com/heroku_de6f35639d8dd1c?reconnect=true
+
 const db = knex({
   client: 'mysql',
   connection: {
-  host : 'us-cdbr-east-02.cleardb.com',
-  user : 'b8c01ca0de33d3',
-  password : 'c70c50bb',
-  database : 'heroku_de6f35639d8dd1c'
+  host : '127.0.0.1',
+  user : 'root',
+  password : '',
+  database : 'test'
 }
 });
 
