@@ -1,0 +1,62 @@
+extends layout
+
+block navigation
+  .video-block
+    .wrapper
+      video(width='100%' height='50%' controls='' autoplay='')
+        source(src='./images/demoreel.mp4' type='video/mp4')
+        | Your browser does not support the video tag.
+  .about-me
+    .wrapper
+     h1 Vladyslav Zdir
+     p.about-text I would like to present you my portfolio of multimedia designer. My main goal is the development of ideas and their implementation in various formats at the highest quality level. I love what I do, so I have an incentive to grow and improve my skills every day. I have a background of work and communication with clients. I wish you enjoy viewing this material.
+  .project
+    .wrapper
+      .container
+        h2.projects-h2 Projects
+        .block
+          a#button-fortnite
+            img.img-project(src="./images/fortnite.png", alt="Fortnite picture")
+          p.project-description Fortnite Intro
+        .block
+          a#button-sport
+            img.img-project(src="./images/sportsstad.png", alt="Sport picture")
+          p.project-description Monday Night Football
+        .block
+          a#button-vodka
+            img.img-project(src="./images/vodka.png", alt="Vodka picture")
+          p.project-description Cold Heard Web Promo Image 
+        .block
+          a#button-disney
+            img.img-project(src="./images/disney.png", alt="Disney picture")
+          p.project-description Disney Channel Bumper
+    #fortnite-modal.modal
+      .modal-content
+        span.close &times;
+        h1 Fortnite Intro
+        p This is a motion design project of new fortnight skin intro. This project was made using Cinema 4D and AfterEffects 
+        video(width='100%' height='50%' controls='' )
+          source(src='./images/fortnite.mp4' type='video/mp4')
+          | Your browser does not support the video tag.
+    #sport-modal.modal
+      .modal-content
+        span.close &times;
+        h1 Monday Night Football
+        p This is a Motion design project of a Monday Night Football intro. This project was made using Cinema 4D, After Effects and Adobe Illustrator. All objects on the scene were created from scratch.
+        video(width='100%' height='50%' controls='' )
+          source(src='./images/sport.mp4' type='video/mp4')
+          | Your browser does not support the video tag.
+    #vodka-modal.modal
+      .modal-content
+        span.close &times;
+        h1 Cold Heard Web Promo Image 
+        p This is a web promotional image for Cold Heart vodka company. This project was made using Cinema 4d, Adobe Photoshop and Adobe Illustrator. All objects on the scene were created from scratch.
+        img.vodka-modal-img(src="./images/vodka2.png", alt="vodka img")
+    #disney-modal.modal
+      .modal-content
+        span.close &times;
+        h1 Disney Channel Bumper
+        p This is a motion design project of a Disney Channel bumper. This project was made using Cinema 4D and AfterEffects. All objects on the scene were created from scratch.
+        video(width='100%' height='50%' controls='' )
+          source(src='./images/video.mp4' type='video/mp4')
+    script(src='./javascripts/modal.js')

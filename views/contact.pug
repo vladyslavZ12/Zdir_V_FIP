@@ -1,0 +1,20 @@
+extends layout
+
+block navigation
+  form
+    .wrapper
+      label(for='name') Name
+      br
+      input(required='required' type='text' name='name' id='name' placeholder='Name')
+      label(for='phone') Contact phone
+      br
+      input(required='required' type='text' name='phone' id='phone' placeholder='+1 226 700 70 70')
+      label(for='description') Description
+      br
+      textarea(required='required' name='comments' id='comments' placeholder='description' style='height:200px')
+      br
+      .p#statusAdd
+      br
+      .download-resume
+        input.submit-btn(type='submit' value='Submit' onclick='addItem()' )
+    script(src='./javascripts/help.js')
